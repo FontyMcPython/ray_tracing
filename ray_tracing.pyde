@@ -49,6 +49,7 @@ class ray:
        # Plot the ray 
         end_x = origin_x + r*cos(self.dir_rad)
         end_y = origin_y + r*sin(self.dir_rad)
+        #point(end_x, end_y)
         line(origin_x, origin_y, end_x, end_y)
 # List of walls.        
 walls = []  
@@ -64,19 +65,23 @@ def setup():
     walls.append(wall(0, height-1, width-1, height-1)) # Muro inferior
     walls.append(wall(width-1, height-1, width-1, 0)) # Muro derecho
     walls.append(wall(width-1, 0, 0, 0)) # Muro superior
-    walls.append(wall(30, 60, 120, 230))
-    walls.append(wall(width/2, height, width, 400))
+    #room
+    walls.append(wall(50, 300, 200, 300))
+    walls.append(wall(200, 200, 200, 350))
+    walls.append(wall(50, 300, 50, 450))
+    walls.append(wall(50, 450, 200, 450))
+    walls.append(wall(200, 480, 200, 400))
     # Rays
-    for i in range(0, 90):
-        rays.append(ray(2*PI*i/90))
+    for i in range(0, 360):
+        rays.append(ray(2*PI*i/360))
     
     
 def draw():
     # Reset canvas
     background(0)
     # Plot Walls
-    for el in walls:
-        el.show()
+    #for el in walls:
+     #   el.show()
     # Plot rays
     for el in rays:
         el.show(mouseX, mouseY)
