@@ -27,3 +27,5 @@ With some basic operation, _r2_ can be reduced to:
 r2 = -------------------------------
        tan(α)(d1 - a1) - (d2 - a2)
 ```
+This can be used as a quick check to wether the point actually exists. If the denominator is _0_, the result is an indetermination
+and the point does not exist. Once _r2_ is computed, it is important to check wether it is positive and less than one. Then, it can be used to compute _r1_ and the actual _X_ point, which are used to plot the ray.
