@@ -1,6 +1,11 @@
 # 2D Ray tracing tests
 My goal is to play around with 2D graphics. The project is completely open so feel free to contribute.
 
+## To Do's
+* Map rework.
+* Ray bounce and search for light source.
+* Rays illuminate area.
+
 ## Ray collision
 ![scheme](https://github.com/FontyMcPython/ray_tracing/blob/master/scheme.png)
 
