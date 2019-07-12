@@ -5,6 +5,7 @@ My goal is to play around with 2D graphics. The project is completely open so fe
 * Map rework.
 * Ray bounce and search for light source.
 * Rays illuminate area.
+* Keyboard control to switch modes.
 
 ## Ray collision
 ![scheme](https://github.com/FontyMcPython/ray_tracing/blob/master/scheme.png)
