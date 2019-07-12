@@ -12,3 +12,17 @@ Wall:
 X = A + r2*(B-A)
 0 <= r2 <= 1
 ```
+
+Ray:
+
+```
+X = C + r1*(cos(α), sin(α))
+0 <= r1
+```
+
+With some basic operation, _r2_ can be reduced to:
+
+```    (a2 - c2)+tan(α)(c1 - a1)
+r2 = -------------------------------
+       tan(α)(d1 - a1) - (d2 - a2)
+```
